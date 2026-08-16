@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Daryll 💗</title>
+<meta name="description" content="A little something for your birthday.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ambient floating hearts -->
+<div class="ambient" id="ambient" aria-hidden="true"></div>
+
+<!-- SCENE 1 : ENVELOPE -->
+<main class="stage" id="stage">
+  <div class="envelope-wrap">
+    <p class="to-line">for Daryll</p>
+    <button class="envelope" id="envelope" aria-label="Open your letter">
+      <span class="envelope-shadow"></span>
+      <span class="env-back"></span>
+      <span class="env-flap"></span>
+      <span class="env-letter-peek"></span>
+      <span class="env-front-left"></span>
+      <span class="env-front-right"></span>
+      <span class="env-seal">
+        <svg viewBox="0 0 100 100" class="heart-svg">
+          <path d="M50 88 C20 66 4 46 4 27 C4 12 15 2 29 2 C39 2 47 8 50 17 C53 8 61 2 71 2 C85 2 96 12 96 27 C96 46 80 66 50 88 Z"/>
+        </svg>
+      </span>
+    </button>
+    <p class="tap-hint">tap the envelope to open</p>
+  </div>
+</main>
+
+<!-- SCENE 2 : LETTER -->
+<section class="letter-scene" id="letterScene" aria-hidden="true">
+  <div class="letter-scroll">
+    <div class="letter-card">
+
+      <button class="close-btn" id="closeBtn" aria-label="Close letter">←</button>
+
+      <header class="letter-head">
+        <p class="eyebrow">happy birthday</p>
+        <h1 class="script-title">Daryll<span class="heart-dot">💗</span></h1>
+      </header>
+
+      <div class="polaroid-strip" id="polaroidStrip">
+        <figure class="polaroid p1"><img src="assets/images/photo1.jpg" alt="Us together at the mall" loading="lazy"></figure>
+        <figure class="polaroid p2"><img src="assets/images/photo2.jpg" alt="Us together, smiling" loading="lazy"></figure>
+        <figure class="polaroid p3"><img src="assets/images/photo3.jpg" alt="Us together, close up" loading="lazy"></figure>
+        <figure class="polaroid p4"><img src="assets/images/photo4.jpg" alt="Us together, candid" loading="lazy"></figure>
+      </div>
+
+      <article class="letter-body">
+        <p>Hi Daryll! 💗</p>
+
+        <p>I just want to greet you a Happy Birthday!!</p>
+
+        <p>I hope you have a really wonderful day and that this new chapter of your life brings you more happiness, success, peace, and all the good things you deserve. I'm genuinely grateful that our paths crossed, and I really appreciate all the conversations, memories, and little moments we've shared.</p>
+
+        <p>I honestly hope that we can continue what we have now and see where this takes us. I'm also hoping that, this time, I can trust you and that trying again will be worth it. You know I'm not really the kind of person who does things like this, but I really wanted to make your day a little more special, so I made this for you when I told you I was going to rest muna hahaha. Sorry if it's not that good huhu. You know naman how busy I've been lately, but I still wanted to make the effort hihi</p>
+
+        <p>I chose "Lightning" by Henry Gallagher as the background song for this because I remember the first time I really noticed you, and somehow, my heart fluttered when I saw you put this song on your IG Notes. It's funny how something as simple as a song can bring back a certain feeling, but I guess that's why it felt right to use it for this. 🥹</p>
+
+        <p>I hope you like this little website I made for you. I know it's not much, but I put time and effort into making it because I wanted to give you something you could keep. I'm also sorry for not being there with you on your special day. I really wish I could have been there, but I hope this somehow makes up for it, even just a little.</p>
+
+        <p>I also just want you to know how grateful I am that you've made me feel like you're always there🫶🏻. That means a lot to me, so please don't hurt me, okay? Please don't be like them :(( I really hope you'll stay consistent and that you won't suddenly change. I hope I can continue to feel safe trusting you. You're genuinely one of the sweetest and most amazing people I've met, and I really hope you know that.</p>
+
+        <p>I hope that everything you wish and pray for will happen in time. Please know that I'm also here to support you, just like how you support and encourage me with my dreams and with everything I do. I'll always be rooting for you and wishing the best for you. 🫶🏻</p>
+
+        <p>For now, please enjoy your day with your friends and family. You deserve to celebrate and enjoy your special day. Happy birthday again, Daryll! 💗</p>
+
+        <p class="see-you">See you on August 23! :))</p>
+      </article>
+
+      <footer class="letter-foot">
+        <p class="signoff">Sincerely,<br><span class="script-name">Jenn</span></p>
+      </footer>
+
+    </div>
+  </div>
+</section>
+
+<!-- music control -->
+<button class="music-toggle" id="musicToggle" aria-label="Play background music" aria-pressed="false">
+  <svg class="icon-note" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+  <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+</button>
+<audio id="bgAudio" loop preload="none">
+  <source src="assets/audio/lightning-henry-gallagher.mp3" type="audio/mpeg">
+</audio>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+<script src="supabase-config.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
